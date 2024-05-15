@@ -1,4 +1,4 @@
-## Modulbeschreibung und Ziele**
+## Modulbeschreibung und Ziele
 
 **Modul 109 - Dienste in der Cloud betreiben und überwachen**
 
