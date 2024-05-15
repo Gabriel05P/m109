@@ -24,11 +24,11 @@ Beantworten Sie folgende Fragen in der Gruppe und notieren Sie Ihre Antworten st
 - **Definition des Begriffs "Cloud"**: Gemäß NIST (National Institute of Standards and Technology) wird Cloud-Computing definiert als ein Modell, das bequemen, bedarfsgerechten und bedarfsgerechten Netzwerkzugriff auf eine gemeinsame Gruppe von konfigurierbaren Rechnerressourcen (z. B. Netzwerke, Server, Speicher, Anwendungen und Dienste) bietet, die schnell und mit minimalem Verwaltungsaufwand bereitgestellt und freigegeben werden können.
 
 - **5 Merkmale einer Cloud**:
-  1. On-Demand Self-Service
-  2. Broad Network Access
-  3. Resource Pooling
-  4. Rapid Elasticity
-  5. Measured Service
+  - On-Demand Self-Service
+  - Broad Network Access
+  - Resource Pooling
+  - Rapid Elasticity
+  - Measured Service
   
 - **Cloud-Dienstleistungen**:
   - Infrastructure as a Service (IaaS)
