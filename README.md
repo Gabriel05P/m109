@@ -1,25 +1,21 @@
+**Modulbeschreibung und Ziele**
 
-## Modul 109: Einführung in Container-Orchestrierung
+**Modul 109 - Dienste in der Cloud betreiben und überwachen**
 
-### Beschreibung:
-Das Modul 109 bietet eine umfassende Einführung in die Container-Orchestrierung, eine wesentliche Technologie für moderne DevOps- und Cloud-Umgebungen. Die Teilnehmer werden in die Grundlagen der Containerisierung eingeführt und lernen, wie Containerorchestrierungstechnologien die Bereitstellung, Skalierung und Verwaltung von Containeranwendungen vereinfachen. Durch praktische Übungen und Fallstudien erhalten die Teilnehmer praktische Erfahrung mit populären Containerorchestrierungssystemen wie Kubernetes und Docker Swarm.
+Das Modul 109 konzentriert sich darauf, Dienste in der Cloud zu betreiben und zu überwachen. Es umfasst die Grundlagen des Cloud-Computings sowie praktische Aspekte wie das Bereitstellen, Überwachen und Verwalten von Anwendungen in der Cloud.
 
-### Lernziele:
-- Verständnis der Konzepte der Containerisierung und ihrer Vorteile
-- Grundlegendes Verständnis der Containerorchestrierungstechnologien
-- Fähigkeit zur Bereitstellung und Skalierung von Containeranwendungen mithilfe von Kubernetes und Docker Swarm
-- Kenntnisse über Best Practices und Fallstricke bei der Containerorchestrierung
-- Anwendung von Automatisierungstools für die Verwaltung von Containerumgebungen
+**Public Cloud für Anwendungen entwickeln**
 
-### Inhalte:
-1. Einführung in Containerisierung und Docker
-2. Grundlagen der Containerorchestrierung
-3. Kubernetes: Architektur und Konzepte
-4. Kubernetes: Bereitstellung und Verwaltung von Anwendungen
-5. Docker Swarm: Einführung und Konfiguration
-6. Vergleich von Kubernetes und Docker Swarm
-7. Best Practices für die Containerorchestrierung
-8. Automatisierung und Skalierung von Containerumgebungen
+Im Modul 210 lernen die Teilnehmer, wie sie Anwendungen speziell für die Public Cloud entwickeln können. Dies beinhaltet die Nutzung von Plattformen, Tools und Services, die von Public Cloud-Anbietern bereitgestellt werden, um skalierbare, sichere und effiziente Anwendungen zu erstellen.
 
-### Zielgruppe:
-Das Modul richtet sich an IT-Profis, Entwickler und Systemadministratoren, die ihre Kenntnisse in der Containerisierung und Containerorchestrierung erweitern möchten. Es ist auch für Organisationen relevant, die ihre Infrastruktur modernisieren und die Vorteile von Containertechnologien nutzen möchten.
+**Handlungsziele**
+
+1. **Definition einer Cloud-Lösung für eine Beispielanwendung**: Die Teilnehmer sollen eine einfache Cloud-Architektur entwerfen, die auf die Ziele des Unternehmens zugeschnitten ist, basierend auf einer Beispielanwendung.
+
+2. **Bewertung des Sicherheitskonzepts**: Die Teilnehmer werden das vorhandene Sicherheitskonzept anhand der Beispielanwendung beurteilen, einschließlich Benutzer- und Rollenverwaltung, Zugriffskontrolle, Auditierung, Verschlüsselung und gemeinsamer Verantwortlichkeiten.
+
+3. **Bereitstellung der Beispielanwendung**: Die Teilnehmer sollen die Beispielanwendung mithilfe von virtuellen Servern und/oder Container-Technologien sowie einem Plattform-Service für Datenbanken bereitstellen.
+
+4. **Implementierung von Infrastrukturüberwachung und -verwaltung**: Die Teilnehmer werden nach Vorgaben die Überwachung, Verwaltung, Patching und Skalierung der Infrastruktur implementieren, einschließlich Monitoring, Logging, Alarmierung und Remote Management.
+
+5. **Implementierung der Datensicherung**: Die Teilnehmer werden nach Vorgabe die Datensicherung (Disaster Recovery/Backup) der Beispielanwendung mit Datenbank implementieren, um die Integrität und Verfügbarkeit der Daten zu gewährleisten.
