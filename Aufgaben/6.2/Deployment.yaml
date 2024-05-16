@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx-deployment
-        image: nginxinc/nginx-unprivileged
+        image: gpervorfi/m109:latest
         ports:
         - containerPort: 8080
 ---
