@@ -86,3 +86,27 @@
 
     Self-Managed: Benutzer sind für die Bereitstellung, Konfiguration, Überwachung und Wartung der Infrastruktur verantwortlich.
     Fully Managed: Der Anbieter übernimmt die Verantwortung für die Bereitstellung, Konfiguration, Überwachung und Wartung der Infrastruktur, wodurch Benutzer entlastet werden.
+
+- **Warum braucht man Container-Orchestrierung?**
+        Um komplexe Anwendungen, die aus mehreren Containern bestehen, effizient zu verwalten, zu automatisieren, zu skalieren und zu überwachen.
+        Um Hochverfügbarkeit, Lastenausgleich und Flexibilität zu gewährleisten.
+
+- **Wie funktioniert Container-Orchestrierung?**
+        Container-Orchestrierung verwaltet automatisch das Deployment, die Skalierung, das Load Balancing, die Wiederherstellung und die Aktualisierung von Containern über eine zentrale Plattform oder Software.
+
+- **Welche Container-Orchestrierung Technologien kennen Sie?**
+        Kubernetes
+        Docker Swarm
+        Apache Mesos
+        Amazon ECS (Elastic Container Service)
+        Google Kubernetes Engine (GKE)
+        Azure Kubernetes Service (AKS)
+
+- **Was versteht man unter "Scaling Containers"?**
+        "Scaling Containers" bezieht sich auf die Fähigkeit, die Anzahl der laufenden Containerinstanzen basierend auf dem aktuellen Ressourcenbedarf automatisch zu erhöhen oder zu verringern.
+
+- **Was gibt es für Deployment Strategien?**
+        Blue-Green Deployment: Es werden zwei parallele Umgebungen betrieben, wobei eine aktiv ist (Blue) und die andere aktualisiert wird (Green), dann wird der Verkehr umgeleitet.
+        Canary Deployment: Eine neue Version der Anwendung wird schrittweise auf einem kleinen Teil des Traffics getestet, bevor sie auf die gesamte Produktionssite übertragen wird.
+        Rolling Deployment: Neue Versionen werden schrittweise auf Teilen der Infrastruktur bereitgestellt, wobei alte Instanzen durch neue ersetzt werden, um Ausfallzeiten zu minimieren.
+
