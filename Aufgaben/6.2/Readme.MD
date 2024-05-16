@@ -61,3 +61,9 @@ Als erstes müssen die Docker gestartet werden.
 sobald das Dockerfile angepasst wurde und die index.html datei in den neuen Ordner kopiert wurde, kann mit diesem Befehl der Docker gebildet werden.
 
 ![alt text](image-1.png)
+
+Sobald der docker gestartet ist, kann mann mit dem befehl wie in dem schritt 4. beschrieben, den neuen docker erstellen und pushen. Dafür muss der username verwendet werden, denn man für Github oder docker desktop benutzt, je nach dem mit was man den docker gestartet hat.
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
