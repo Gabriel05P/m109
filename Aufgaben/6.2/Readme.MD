@@ -66,9 +66,8 @@ Sobald der docker gestartet ist, kann mann mit dem befehl wie in dem schritt 4. 
 
     docker build -t gpervorfi/html-page:v1 .
 
-    docker build -t gpervorfi/html-page:v1 . --push
-
-
 ![alt text](image-2.png)
+
+    docker build -t gpervorfi/html-page:v1 . --push
 
 ![alt text](image-3.png)
