@@ -87,6 +87,8 @@
     Self-Managed: Benutzer sind für die Bereitstellung, Konfiguration, Überwachung und Wartung der Infrastruktur verantwortlich.
     Fully Managed: Der Anbieter übernimmt die Verantwortung für die Bereitstellung, Konfiguration, Überwachung und Wartung der Infrastruktur, wodurch Benutzer entlastet werden.
 
+    ## Auftrag 4.1: Container-Orchestrierung
+
 - **Warum braucht man Container-Orchestrierung?**
         Um komplexe Anwendungen, die aus mehreren Containern bestehen, effizient zu verwalten, zu automatisieren, zu skalieren und zu überwachen.
         Um Hochverfügbarkeit, Lastenausgleich und Flexibilität zu gewährleisten.
