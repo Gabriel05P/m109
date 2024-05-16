@@ -1,18 +1,18 @@
 ## Auftrag 6.2: HTML-Seite auf OpenShift deployen
 
-    Erstellen Sie einen neuen Ordner und kopieren Sie die HTML Seite aus Auftrag 1.1 und das Dockerfile aus Auftrag 3.2.
-    Ersetzen Sie das Baseimage "nginx" mit "nginxinc/nginx-unprivileged".
-    Builden und testen Sie den Container, sodass dieser die Webseite auf Port 8080 publiziert.
-    Pushen Sie den Container in die Github Container Registry:
+Erstellen Sie einen neuen Ordner und kopieren Sie die HTML Seite aus Auftrag 1.1 und das Dockerfile aus Auftrag 3.2.
+Ersetzen Sie das Baseimage "nginx" mit "nginxinc/nginx-unprivileged".
+Builden und testen Sie den Container, sodass dieser die Webseite auf Port 8080 publiziert.
+Pushen Sie den Container in die Github Container Registry:
 
     docker build -t ghcr.io/<Github Username>/html-page:v1 .
     docker push ghcr.io/<Github Username>/html-page:v1
 
-    Erstellen Sie ein Deployment für den Container, wie Sie es in Auftrag 4.2 gelernt haben. Und applizieren Sie dieses:
+Erstellen Sie ein Deployment für den Container, wie Sie es in Auftrag 4.2 gelernt haben. Und applizieren Sie dieses:
 
     oc apply -f deployment.yaml
 
-    Fügen Sie dem Deployment folgenden Service und Route hinzu und applizieren Sie das File erneut:
+Fügen Sie dem Deployment folgenden Service und Route hinzu und applizieren Sie das File erneut:
 
 ---
 apiVersion: v1
