@@ -37,3 +37,52 @@
 
 - **Teilen technologischer Beiträge in der Cloud**:
   - Technologische Beiträge können über Plattformen wie GitHub durch das Erstellen und Veröffentlichen von Repositories geteilt werden. Klare Dokumentation, Readme-Dateien und Lizenzierung sind entscheidend für eine strukturierte und transparente Bereitstellung.
+
+  ## Auftrag 3.1: Grundlagen Container-Technologie
+
+
+- **Was ist Container-Technologie oder Container-Virtualisierung?**
+
+    Container-Technologie ist eine Form der Virtualisierung, bei der Anwendungen und ihre Abhängigkeiten in isolierten Containern ausgeführt werden, die auf einem gemeinsamen Betriebssystemkern laufen.
+
+- **Vor- und Nachteile der Container-Technologie im Vergleich zu virtuellen Servern (VM)**
+
+    Vorteile:
+        Schnellere Bereitstellung
+        Geringerer Ressourcenverbrauch
+        Höhere Effizienz
+        Bessere Portabilität
+    Nachteile:
+        Geringere Isolation
+        Begrenzte Unterstützung für bestimmte Betriebssysteme
+        Komplexität bei der Verwaltung von Containern
+
+- **Produkte im Zusammenhang mit virtuellen Servern und Containern**
+
+    Virtuelle Server:
+        VMware vSphere
+        Microsoft Hyper-V
+        KVM
+        VirtualBox
+    Container:
+        Docker
+        Kubernetes
+        Docker Swarm
+        OpenShift
+
+- **Unterschiede zwischen VM und Container in Bezug auf Bereitstellung, Speicherplatz, Portabilität, Effizienz und Betriebssystem (Kernel)**
+
+    Bereitstellung: VMs benötigen mehr Zeit, während Container nahezu sofort bereit sind.
+    Speicherplatz: VMs benötigen mehr Speicherplatz, da sie ein eigenes Betriebssystem und Kernel enthalten, während Container Ressourcen teilen.
+    Portabilität: Container sind portabler, da sie Anwendungen und ihre Abhängigkeiten kapseln, während VMs ganze Betriebssysteme umfassen.
+    Effizienz: Container sind effizienter in Bezug auf Ressourcennutzung.
+    Betriebssystem (Kernel): VMs verwenden eigene Betriebssysteme und Kernel, während Container den Kernel des Host-Betriebssystems nutzen.
+
+- **Können virtuelle Server immer durch Container ersetzt werden?**
+
+    Nicht immer. Container eignen sich gut für bestimmte Arten von Anwendungen, aber es gibt Fälle, in denen die Isolation und die Ressourcentrennung von VMs erforderlich sind.
+
+- **Unterschied zwischen Self-Managed und Fully Managed**
+
+    Self-Managed: Benutzer sind für die Bereitstellung, Konfiguration, Überwachung und Wartung der Infrastruktur verantwortlich.
+    Fully Managed: Der Anbieter übernimmt die Verantwortung für die Bereitstellung, Konfiguration, Überwachung und Wartung der Infrastruktur, wodurch Benutzer entlastet werden.
