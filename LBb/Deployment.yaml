@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: counter-postgresadmin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: counter-postgresadmin
+  template:
+    metadata:
+      labels:
+        app: counter-postgresadmin
+    spec:
+      volumes:
+        - name: db-data
+          persistentVolumeClaim:
+            claimName: db-volume
+      containers:
+        - name: counter-postgresadmin
+          image: docker.io/thajeztah/pgadmin4
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5050
+          volumeMounts:
+            - name: db-data
+              mountPath: /pgadmin/
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: counter-postgresadmin
+spec:
+  selector:
+    app: counter-postgresadmin
+  ports:
+    - protocol: TCP
+      port: 5050
+      targetPort: 5050
+  type: ClusterIP
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: counter-postgresadmin
+spec:
+  port:
+    targetPort: 5050
+  to:
+    kind: Service
+    name: counter-postgresadmin
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
