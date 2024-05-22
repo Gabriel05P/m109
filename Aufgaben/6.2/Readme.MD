@@ -54,10 +54,6 @@ spec:
 
 ### Vorgehen
 
-Als erstes müssen die Docker gestartet werden. 
-
-![alt text](image.png)
-
 sobald das Dockerfile angepasst wurde und die index.html datei in den neuen Ordner kopiert wurde, kann mit diesem Befehl der Docker gebildet werden.
 
 ![alt text](image-1.png)
