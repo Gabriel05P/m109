@@ -1,54 +1,36 @@
-apiVersion: apps/v1
 kind: Deployment
+apiVersion: apps/v1
 metadata:
-  name: counter-postgresadmin
+  name: counter-database
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: counter-postgresadmin
+      app: counter-database
   template:
     metadata:
       labels:
-        app: counter-postgresadmin
+        app: counter-database
     spec:
-      volumes:
-        - name: db-data
-          persistentVolumeClaim:
-            claimName: db-volume
       containers:
-        - name: counter-postgresadmin
-          image: docker.io/thajeztah/pgadmin4
+        - name: counter-database
+          image: quay.io/centos7/postgresql-10-centos7:20221109
           imagePullPolicy: Always
           ports:
-            - containerPort: 5050
-          volumeMounts:
-            - name: db-data
-              mountPath: /pgadmin/
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: counter-postgresadmin
-spec:
-  selector:
-    app: counter-postgresadmin
-  ports:
-    - protocol: TCP
-      port: 5050
-      targetPort: 5050
-  type: ClusterIP
----
-apiVersion: route.openshift.io/v1
-kind: Route
-metadata:
-  name: counter-postgresadmin
-spec:
-  port:
-    targetPort: 5050
-  to:
-    kind: Service
-    name: counter-postgresadmin
-  tls:
-    termination: edge
-    insecureEdgeTerminationPolicy: Redirect
+            - containerPort: 5432
+          env:
+            - name: POSTGRESQL_USER
+              valueFrom:
+                secretKeyRef:
+                  name: counter-database
+                  key: database-user
+            - name: POSTGRESQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: counter-database
+                  key: database-password
+            - name: POSTGRESQL_DATABASE
+              valueFrom:
+                secretKeyRef:
+                  name: counter-database
+                  key: database-name
