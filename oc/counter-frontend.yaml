@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: counter-frontend
+  labels:
+    app: counter-frontend
+    app.kubernetes.io/part-of: counter
+spec:
+  selector:
+    matchLabels:
+      app: counter-frontend
+  template:
+    metadata:
+      labels:
+        app: counter-frontend
+        app.kubernetes.io/part-of: counter
+    spec:
+      containers:
+      - name: counter-frontend
+        image: ghcr.io/gabriel05p/counter-frontend:v1
+        ports:
+        - containerPort: 3000
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 3000
+          initialDelaySeconds: 30
+          periodSeconds: 30
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 3000
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        env:
+        - name: NODE_ENV
+          value: production
+        - name: REACT_APP_VERSION
+          value: 1.0.0
+        - name: REACT_APP_NAME
+          value: Counter
+        - name: BACKEND_URL
+          valueFrom:
+            secretKeyRef:
+              name: counter-database
+              key: BACKEND_URL
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 25%
+      maxSurge: 25%
+    revisionHistoryLimit: 4
+    progressDeadlineSeconds: 600
